@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { ArrowRight } from "lucide-react";
 import type { ServicePage } from "../data/servicePages";
 
@@ -6,11 +7,13 @@ type ServiceDetailPageProps = {
 };
 
 export default function ServiceDetailPage({ page }: ServiceDetailPageProps) {
-  const Icon = page.icon;
+  const heroStyle = {
+    "--service-hero-image": `url("${page.image}")`,
+  } as CSSProperties;
 
   return (
     <div className={`service-detail service-detail--${page.slug}`}>
-      <section className={`service-page service-page--${page.slug}`}>
+      <section className={`service-page service-page--${page.slug}`} style={heroStyle}>
         <div className="service-page__hero">
           <div className="service-page__copy">
             <div className="service-page__breadcrumb">
@@ -28,15 +31,6 @@ export default function ServiceDetailPage({ page }: ServiceDetailPageProps) {
 
             <p>{page.intro}</p>
 
-            <div className="service-page__heroStats" aria-label={`${page.navLabel} highlights`}>
-              {page.heroStats.map((stat) => (
-                <div key={stat.label}>
-                  <strong>{stat.value}</strong>
-                  <span>{stat.label}</span>
-                </div>
-              ))}
-            </div>
-
             <div className="service-page__actions">
               <a className="primary-btn" href="mailto:info@novasphereconsulting.com">
                 Book a Consultation
@@ -46,31 +40,6 @@ export default function ServiceDetailPage({ page }: ServiceDetailPageProps) {
                 {page.otherLabel}
                 <ArrowRight size={15} />
               </a>
-            </div>
-          </div>
-
-          <div className="service-page__visual" style={{ backgroundImage: `url("${page.image}")` }}>
-            <div className="service-page__signalPanel" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-            </div>
-
-            <div className="service-page__visualBadge">
-              <span>{page.visualBadge.label}</span>
-              <strong>{page.visualBadge.value}</strong>
-            </div>
-
-            <div className="service-page__visualCard">
-              <div className="icon-box">
-                <Icon size={24} />
-              </div>
-              <strong>{page.navLabel}</strong>
-              <ul>
-                {page.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>

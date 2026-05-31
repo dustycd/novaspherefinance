@@ -682,6 +682,20 @@ button {
   padding: clamp(74px, 8vw, 116px) 72px var(--section-gap-large);
 }
 
+.service-page--financial-advisory {
+  min-height: clamp(620px, calc(100svh - 66px), 820px);
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.86) 38%, rgba(255, 255, 255, 0.46) 66%, rgba(255, 255, 255, 0.16) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(246, 247, 249, 0.62)),
+    var(--service-hero-image);
+  background-position: center, center, center right;
+  background-size: cover;
+}
+
 .service-page__hero {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.85fr);
@@ -689,11 +703,22 @@ button {
   gap: clamp(46px, 6vw, 90px);
 }
 
+.service-page--financial-advisory .service-page__hero {
+  width: 100%;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  padding: clamp(98px, 10vw, 146px) 72px clamp(84px, 8vw, 118px);
+}
+
+.service-page--financial-advisory .service-page__copy {
+  max-width: 720px;
+}
+
 .service-page__copy,
 .service-page__visual,
 .service-page__sectionHeading,
 .service-page__outcomes,
-.service-page__heroStats,
 .service-page__deepCopy,
 .service-page__deepGrid,
 .service-page__listPanel,
@@ -720,10 +745,6 @@ button {
 
 .service-page__copy > :nth-child(5) {
   animation-delay: 310ms;
-}
-
-.service-page__copy > :nth-child(6) {
-  animation-delay: 380ms;
 }
 
 .service-page__breadcrumb {
@@ -767,44 +788,6 @@ button {
   color: rgba(17, 24, 39, 0.68);
   font-size: clamp(1rem, 1.25vw, 1.16rem);
   line-height: 1.72;
-}
-
-.service-page__heroStats {
-  max-width: 680px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.service-page__heroStats div {
-  min-height: 108px;
-  padding: 18px;
-  border: 1px solid var(--service-accent-border);
-  border-radius: 18px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.66)),
-    linear-gradient(135deg, var(--service-accent-soft), transparent 66%);
-  box-shadow: 0 18px 46px rgba(17, 24, 39, 0.06);
-}
-
-.service-page__heroStats strong {
-  display: block;
-  color: var(--service-accent);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.05;
-}
-
-.service-page__heroStats span {
-  display: block;
-  margin-top: 10px;
-  color: rgba(17, 24, 39, 0.62);
-  font-size: 0.78rem;
-  font-weight: 700;
-  line-height: 1.45;
 }
 
 .service-page__actions {
@@ -1654,7 +1637,6 @@ button {
     gap: 18px;
   }
 
-  .service-page__heroStats,
   .service-page__deepGrid {
     grid-template-columns: 1fr;
   }
@@ -1733,6 +1715,19 @@ button {
 
   .service-page {
     padding: 58px 18px var(--section-gap-large);
+  }
+
+  .service-page--financial-advisory {
+    min-height: 620px;
+    padding: 0;
+    background-image:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.82) 54%, rgba(246, 247, 249, 0.64) 100%),
+      var(--service-hero-image);
+    background-position: center, center right;
+  }
+
+  .service-page--financial-advisory .service-page__hero {
+    padding: 94px 18px 72px;
   }
 
   .service-page__breadcrumb {

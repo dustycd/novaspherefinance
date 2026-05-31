@@ -1,4 +1,5 @@
 import { BarChart3, Target, TrendingUp, Users } from "lucide-react";
+import financialHero from "../assets/financial-hero.png";
 
 export const servicePages = {
   financial: {
@@ -10,22 +11,7 @@ export const servicePages = {
     accent: "business decisions.",
     intro:
       "We help leadership teams understand their numbers, build reliable planning rhythms, and turn financial visibility into confident growth decisions.",
-    image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1800&auto=format&fit=crop",
-    heroStats: [
-      { value: "13-week", label: "rolling cash-flow visibility" },
-      { value: "Monthly", label: "leadership reporting cadence" },
-      { value: "Margin", label: "analysis by product, branch, or service line" },
-    ],
-    highlights: [
-      "Cash-flow visibility",
-      "Margin and profitability discipline",
-      "Decision-ready reporting",
-    ],
-    visualBadge: {
-      label: "Decision view",
-      value: "Cash, margin, runway",
-    },
+    image: financialHero,
     outcomes: [
       {
         icon: TrendingUp,

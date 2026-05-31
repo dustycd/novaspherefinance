@@ -10,10 +10,6 @@ const footerLinks = {
     { label: "Profitability Review", href: "/financial-advisory" },
     { label: "Strategic Growth", href: "/#services" },
   ],
-  legal: [
-    { label: "Privacy Policy", href: "#privacy" },
-    { label: "Terms of Use", href: "#terms" },
-  ],
 };
 
 export default function Footer() {
@@ -68,15 +64,6 @@ export default function Footer() {
             <div className="footer__column">
               <h3>Services</h3>
               {footerLinks.services.map((link) => (
-                <a key={link.label} href={link.href}>
-                  {link.label}
-                </a>
-              ))}
-            </div>
-
-            <div className="footer__column">
-              <h3>Legal</h3>
-              {footerLinks.legal.map((link) => (
                 <a key={link.label} href={link.href}>
                   {link.label}
                 </a>
