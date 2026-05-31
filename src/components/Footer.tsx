@@ -2,14 +2,13 @@ const footerLinks = {
   company: [
     { label: "Home", href: "/" },
     { label: "Financial Advisory", href: "/financial-advisory" },
-    { label: "Food & Beverage Consulting", href: "/food-beverage-consulting" },
     { label: "Client Approach", href: "/#services" },
   ],
   services: [
     { label: "Financial Planning", href: "/financial-advisory" },
     { label: "Forecasting & Reporting", href: "/financial-advisory" },
-    { label: "F&B Strategy", href: "/food-beverage-consulting" },
-    { label: "Operations Advisory", href: "/food-beverage-consulting" },
+    { label: "Profitability Review", href: "/financial-advisory" },
+    { label: "Strategic Growth", href: "/#services" },
   ],
   legal: [
     { label: "Privacy Policy", href: "#privacy" },
@@ -43,9 +42,8 @@ export default function Footer() {
             </a>
 
             <p>
-              Strategic financial advisory and food & beverage consulting for
-              companies looking to improve structure, visibility, and long-term
-              performance.
+              Strategic financial advisory for companies looking to improve
+              structure, visibility, and long-term performance.
             </p>
 
             <div className="footer__contactCard">
@@ -89,7 +87,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <span>© 2026 NovaSphere Consulting. All rights reserved.</span>
-          <span>Financial advisory · F&amp;B consulting · Dubai</span>
+          <span>Financial advisory · Strategic growth · Dubai</span>
         </div>
       </div>
 

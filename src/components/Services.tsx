@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, BarChart3, Building2, Target } from "lucide-react";
+import { ArrowLeft, ArrowRight, BarChart3, Target } from "lucide-react";
 
 const services = [
   {
@@ -10,16 +10,6 @@ const services = [
       "Financial planning, budgeting, and cash-flow forecasting",
       "Management reporting, KPI visibility, and decision support",
       "Profitability review, cost structure analysis, and growth planning",
-    ],
-  },
-  {
-    icon: Building2,
-    title: "F&B Consulting",
-    text: "End-to-end consulting for restaurants and food businesses — from concept to expansion.",
-    details: [
-      "Concept development, positioning, and operating model design",
-      "Menu economics, supplier structure, and margin improvement",
-      "Launch planning, team structure, and expansion readiness",
     ],
   },
   {
@@ -41,12 +31,6 @@ const serviceDeepDives = [
     text: "Go deeper into how we build forecasts, reporting rhythms, profitability reviews, and financial decision support.",
     href: "/financial-advisory",
   },
-  {
-    icon: Building2,
-    title: "F&B Consulting",
-    text: "Explore our approach to concept development, menu economics, operational structure, launch planning, and expansion readiness.",
-    href: "/food-beverage-consulting",
-  },
 ];
 
 export default function Services() {
@@ -62,7 +46,7 @@ export default function Services() {
         </h2>
 
         <p>
-          From financial strategy to F&B consulting, we help businesses build
+          From financial strategy to growth planning, we help businesses build
           structure, improve profitability, and scale with confidence.
         </p>
 

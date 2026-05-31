@@ -9,9 +9,9 @@ const testimonials = [
   },
   {
     quote:
-      "Their F&B expertise helped us streamline operations and scale profitably. A truly strategic partner.",
+      "Their reporting rhythm helped us see performance clearly and act faster. A truly strategic partner.",
     name: "Laura Mitchell",
-    role: "Founder, F&B Brand",
+    role: "Founder, Growth Company",
   },
   {
     quote:

@@ -109,7 +109,7 @@ button {
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: clamp(16px, 2vw, 26px);
+  gap: clamp(24px, 2vw, 26px);
   padding: 0;
   border: 0;
   background: transparent;
@@ -666,12 +666,6 @@ button {
   --service-accent: #3d6478;
   --service-accent-soft: rgba(61, 100, 120, 0.12);
   --service-accent-border: rgba(61, 100, 120, 0.26);
-}
-
-.service-detail--food-beverage-consulting {
-  --service-accent: #62785c;
-  --service-accent-soft: rgba(98, 120, 92, 0.13);
-  --service-accent-border: rgba(98, 120, 92, 0.26);
 }
 
 .service-page {

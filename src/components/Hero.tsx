@@ -7,7 +7,6 @@ export default function Hero() {
       <div className="hero-color-wash" />
 
       <div className="hero-content">
-        <span className="eyebrow">Dubai-based consulting firm</span>
 
         <h1>
           Strategic advisory.

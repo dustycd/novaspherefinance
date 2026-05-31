@@ -11,7 +11,6 @@ import { servicePages } from "./data/servicePages";
 
 const serviceRoutes = {
   "/financial-advisory": servicePages.financial,
-  "/food-beverage-consulting": servicePages.foodBeverage,
 };
 
 function HomePage() {
