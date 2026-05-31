@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import LogoStrip from "./components/LogoStrip";
 import Services from "./components/Services";
 import Stats from "./components/Stats";
 import Testimonials from "./components/Testimonials";
@@ -17,7 +16,6 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <LogoStrip />
       <Services />
       <Stats />
       <Testimonials />
