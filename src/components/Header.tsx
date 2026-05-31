@@ -57,6 +57,23 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle("nav-lock", isMenuOpen);
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.classList.remove("nav-lock");
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isMenuOpen]);
+
   return (
     <header className="header">
       <a className="brand" href="/">
@@ -80,6 +97,15 @@ export default function Header() {
       >
         {isMenuOpen ? <X size={18} /> : <Menu size={18} />}
       </button>
+
+      <button
+        className={`mobile-nav-backdrop ${isMenuOpen ? "is-open" : ""}`}
+        type="button"
+        aria-hidden={!isMenuOpen}
+        aria-label="Close navigation"
+        tabIndex={isMenuOpen ? 0 : -1}
+        onClick={() => setIsMenuOpen(false)}
+      />
 
       <nav
         className={`nav ${isMenuOpen ? "is-open" : ""}`}
