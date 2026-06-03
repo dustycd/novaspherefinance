@@ -76,15 +76,14 @@ export default function Header() {
 
   return (
     <header className="header">
-      <a className="brand" href="/">
-        <div className="brand-mark">
-          <span />
-        </div>
-
-        <div>
-          <strong>NOVASPHERE</strong>
-          <small>CONSULTING</small>
-        </div>
+      <a className="brand" href="/" aria-label="NovaSphere Consulting home">
+        <img
+          className="brand-logo"
+          src="/logo.png"
+          alt=""
+          width="1101"
+          height="291"
+        />
       </a>
 
       <button

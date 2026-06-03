@@ -29,12 +29,15 @@ export default function Footer() {
 
         <div className="footer__main">
           <div className="footer__brandBlock">
-            <a className="footer__logo" href="#home" aria-label="NovaSphere Consulting home">
-              <span className="footer__logoMark">NS</span>
-              <span>
-                <strong>NovaSphere</strong>
-                <small>Consulting</small>
-              </span>
+            <a className="footer__logo" href="/" aria-label="NovaSphere Consulting home">
+              <img
+                className="footer__logoImage"
+                src="/logo.png"
+                alt=""
+                width="1101"
+                height="291"
+                loading="lazy"
+              />
             </a>
 
             <p>
@@ -193,42 +196,13 @@ export default function Footer() {
         .footer__logo {
           display: inline-flex;
           align-items: center;
-          gap: 14px;
-          color: #111827;
           text-decoration: none;
         }
 
-        .footer__logoMark {
-          display: grid;
-          place-items: center;
-          width: 46px;
-          height: 46px;
-          border-radius: 16px;
-          background: linear-gradient(145deg, #111827, #3f4652);
-          color: #ffffff;
-          font-size: 13px;
-          font-weight: 800;
-          letter-spacing: 0.08em;
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 16px 32px rgba(17, 24, 39, 0.18);
-        }
-
-        .footer__logo strong,
-        .footer__logo small {
+        .footer__logoImage {
           display: block;
-        }
-
-        .footer__logo strong {
-          font-size: 18px;
-          letter-spacing: -0.035em;
-        }
-
-        .footer__logo small {
-          margin-top: 2px;
-          color: #6b7280;
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: 0.16em;
-          text-transform: uppercase;
+          width: min(284px, 100%);
+          height: auto;
         }
 
         .footer__contactCard {

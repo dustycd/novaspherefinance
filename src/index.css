@@ -62,53 +62,16 @@ button {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  min-width: max-content;
+  width: clamp(148px, 17vw, 178px);
+  min-width: 0;
   position: relative;
   z-index: 80;
 }
 
-.brand-mark {
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(17, 24, 39, 0.22);
-  border-radius: 50%;
-  position: relative;
-}
-
-.brand-mark::before,
-.brand-mark::after,
-.brand-mark span {
-  content: "";
-  position: absolute;
-  inset: 7px;
-  border: 1px solid rgba(17, 24, 39, 0.35);
-  border-radius: 45% 55% 50% 50%;
-}
-
-.brand-mark::after {
-  transform: rotate(60deg);
-}
-
-.brand-mark span {
-  transform: rotate(120deg);
-}
-
-.brand strong {
+.brand-logo {
   display: block;
-  font-size: 0.94rem;
-  letter-spacing: 0.16em;
-  font-weight: 900;
-}
-
-.brand small {
-  display: block;
-  margin-top: 1px;
-  font-size: 0.52rem;
-  letter-spacing: 0.24em;
-  font-weight: 800;
+  width: 100%;
+  height: auto;
 }
 
 .nav {
@@ -1395,31 +1358,7 @@ button {
   }
 
   .brand {
-    min-width: 0;
-    gap: 9px;
-  }
-
-  .brand-mark {
-    width: 32px;
-    height: 32px;
-    flex: 0 0 auto;
-  }
-
-  .brand-mark::before,
-  .brand-mark::after,
-  .brand-mark span {
-    inset: 7px;
-  }
-
-  .brand strong {
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
-    overflow-wrap: anywhere;
-  }
-
-  .brand small {
-    font-size: 0.49rem;
-    letter-spacing: 0.18em;
+    width: min(148px, calc(100vw - 96px));
   }
 
   .mobile-nav-backdrop {
@@ -1782,14 +1721,6 @@ button {
 
   .header {
     padding-inline: 14px;
-  }
-
-  .brand strong {
-    font-size: 0.78rem;
-  }
-
-  .brand small {
-    letter-spacing: 0.18em;
   }
 
   .nav {
