@@ -1,4 +1,4 @@
-import { Building2, Globe2, TrendingUp, Users } from "lucide-react";
+import { Building2, Globe2, TrendingUp } from "lucide-react";
 
 const stats = [
   {
@@ -6,12 +6,6 @@ const stats = [
     value: "50+",
     label: "Businesses Advised",
     text: "Across diverse industries in the UAE and beyond.",
-  },
-  {
-    icon: Users,
-    value: "25+",
-    label: "Years of Experience",
-    text: "In finance, strategy, and business consulting.",
   },
   {
     icon: Globe2,
